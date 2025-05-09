@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Journal</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+      <button class="nav-btn theme-toggle" title="Toggle Theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="nav-btn new-entry" title="New Entry">
+        <i class="fas fa-plus"></i>
+      </button>
+      <button class="nav-btn view-entries" title="View Entries">
+        <i class="fas fa-book-open"></i>
+      </button>
+      <button class="nav-btn logout-btn" title="Logout">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="journal-main">
+      <div class="welcome-section">
+        <h1 class="animated-title">
+          <span class="title-word">Mindful</span>
+          <span class="title-word">Journal</span>
+        </h1>
+        <div class="mood-selector">
+          <p>How are you feeling today?</p>
+          <div class="emoji-options">
+            <div class="emoji-option" data-mood="happy">😊</div>
+            <div class="emoji-option" data-mood="sad">😢</div>
+            <div class="emoji-option" data-mood="angry">😠</div>
+            <div class="emoji-option" data-mood="excited">🤩</div>
+            <div class="emoji-option" data-mood="calm">😌</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="journal-entry-container">
+        <div class="entry-header">
+          <span class="entry-date"></span>
+          <span class="current-mood"></span>
+        </div>
+        <textarea id="journalEntry" placeholder="Pour your thoughts here..."></textarea>
+        <div class="entry-actions">
+          <button class="save-btn pulse">
+            <i class="fas fa-save"></i> Save Entry
+          </button>
+          <button class="voice-btn">
+            <i class="fas fa-microphone"></i> Voice Note
+          </button>
+          <button class="photo-btn">
+            <i class="fas fa-camera"></i> Add Photo
+          </button>
+        </div>
+      </div>
+
+      <div class="entry-preview hidden">
+        <h3>Your Recent Entries</h3>
+        <div class="entries-list"></div>
+      </div>
+    </main>
+
+    <div class="notification"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

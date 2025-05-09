@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Mindful Journal</title>
+  <link rel="stylesheet" href="css/auth.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="auth-container">
+    <div class="auth-card">
+      <div class="card-header">
+        <h2>Begin Your Journey</h2>
+        <p>Start documenting your thoughts today</p>
+      </div>
+      
+      <form id="signupForm" class="auth-form">
+        <div class="input-group floating">
+          <input type="text" id="signupUsername" required>
+          <label for="signupUsername">Username</label>
+          <i class="fas fa-user"></i>
+        </div>
+        
+        <div class="input-group floating">
+          <input type="password" id="signupPassword" required>
+          <label for="signupPassword">Password</label>
+          <i class="fas fa-lock"></i>
+        </div>
+        
+        <div class="input-group floating">
+          <input type="password" id="signupConfirmPassword" required>
+          <label for="signupConfirmPassword">Confirm Password</label>
+          <i class="fas fa-lock"></i>
+        </div>
+        
+        <button type="submit" class="auth-btn">
+          <span>Sign Up</span>
+          <i class="fas fa-user-plus"></i>
+        </button>
+      </form>
+      
+      <div class="auth-footer">
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+      </div>
+    </div>
+    
+    <div class="auth-decoration">
+      <div class="decoration-circle"></div>
+      <div class="decoration-circle"></div>
+      <div class="decoration-circle"></div>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
